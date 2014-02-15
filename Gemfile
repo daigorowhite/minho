@@ -6,6 +6,13 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'i18n_generators'
+
+# boot strap
+gem 'bootstrap-sass'
+group :development do
+  gem 'rails_layout'
+end
 
 
 # Gems used only for assets and not required

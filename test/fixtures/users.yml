@@ -1,11 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  user_id: 1
+  user_id: MyString
   user_name: MyString
   password: MyString
+  prefecture_id: 1
+  city_id: 1
 
 two:
-  user_id: 1
+  user_id: MyString
   user_name: MyString
   password: MyString
+  prefecture_id: 1
+  city_id: 1

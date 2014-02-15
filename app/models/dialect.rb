@@ -1,3 +1,3 @@
 class Dialect < ActiveRecord::Base
-  attr_accessible :dialect_id, :dialect_word
+  attr_accessible :city_id, :dialect_word, :prefecture_id
 end

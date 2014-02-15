@@ -1,0 +1,31 @@
+
+<%= render 'common/header'%>
+
+<div class="container">
+	<h2>あたらしい方言の登録</h2>
+	<%= form_tag({:controller => 'dialect' , :action => 'add' }) do %>
+	<div class="field row">
+		<div class="col-md-1">
+			<%= label :dialect , "方言"%> 
+		</div>
+		<div class="form-group col-xs-8 col-sm-6 col-md-4">
+			<%= text_field :dialect , :dialect_word ,{ :class=>"form-control", :placeholder=>"方言" }  %>
+		</div>
+	</div>
+	<div class="field row">
+		<div class="col-md-1">
+			<%= label :mean , "意味"%> 
+		</div>
+		<div class="form-group col-xs-8 col-sm-6 col-md-4">
+			<%= text_field :mean , :mean_word ,{ :class=>"form-control", :placeholder=>"意味" }  %>
+		</div>
+	</div>
+	<div class="actions row">
+		<div class="col-md-1  col-md-offset-4">
+			<%= submit_tag "追加" , { :class=>"btn btn-primary"} %>
+		</div>
+	</div>
+	<% end %>
+</div>
+
+<%= render 'common/footer'%>

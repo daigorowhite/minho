@@ -1,9 +1,9 @@
-prefecture prefecture_id:integer prefecture_name:string prefecture_yomi:string 
-city       city_id:integer prefecture_id:integer city_name:string city_yomi:string 
+prefecture prefecture_name:string prefecture_yomi:string 
+city       prefecture_id:integer city_name:string city_yomi:string 
 
-dialect    dialect_id:integer dialect_word:string
-mean       mean_id:integer dialect_id:integer mean_word:string user_id:integer
-example    example_id:integer dialect_id:integer example_word:string user_id:integer
-comment    comment_id:integer dialect_id:integer comment_word:string user_id:integer
+dialect    prefecture_id:integer city_id:integer dialect_word:string
+mean       dialect_id:integer mean_word:string user_id:integer
+example    dialect_id:integer example_word:string user_id:integer
+comment    dialect_id:integer comment_word:string user_id:integer
 
-user       user_id:integer user_name:string password;string user_name:string prefecture_id:integer city_id:integer
+user       user_id:string user_name:string password:string prefecture_id:integer city_id:integer

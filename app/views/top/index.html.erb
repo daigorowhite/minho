@@ -1,0 +1,28 @@
+<%= render 'common/header'%>
+
+<div class="jumbotron">
+	<h1>めんそーれー</h1>
+	<p class="lead">ここはみんなが使ってる方言を共有する場所だよ。<br>
+		方言をわかちあいましょう！</p>
+	<p> <%= link_to '新しい方言を作る' , '/dialect/new.html' 	,
+	{ :class=>"btn btn-lg btn-success" , :role=>"button" } %>
+</p>
+</div>
+
+<div class="container">
+	<h2>最近登録された方言</h2>
+	<% @dialects.each do |d| %>
+	<hr>
+	<div class="row">
+		<div class="col-md-2"> <%= link_to d.dialect_word , '/dialect/detail/' + d.id.to_s %></div>
+		<div class="col-md-4"> 
+			<% m = Mean.where("dialect_id = #{d.id}").first%>
+			<% if m != nil %>
+			<%= m.mean_word %>
+			<% end%>
+		</div>
+	</div>
+	<% end%>
+</div>
+
+<%= render 'common/footer' %>

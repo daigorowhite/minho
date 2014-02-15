@@ -2,10 +2,10 @@
 
 one:
   dialect_id: 1
-  example_word: MyString
+  mean_word: MyString
   user_id: 1
 
 two:
   dialect_id: 1
-  example_word: MyString
+  mean_word: MyString
   user_id: 1

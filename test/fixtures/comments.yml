@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  comment_id: 1
   dialect_id: 1
   comment_word: MyString
   user_id: 1
 
 two:
-  comment_id: 1
   dialect_id: 1
   comment_word: MyString
   user_id: 1
